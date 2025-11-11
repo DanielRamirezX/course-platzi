@@ -1,0 +1,19 @@
+name: Esto es una prueba
+on: 
+  workflow_dispatch:
+  push:
+    branches:
+      - aprendiendo-github-actions
+
+jobs:
+    prueba:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Install Python
+              uses: actions/setup-python@v4
+              with:
+                python-version: '3.x'
+            - name: Check Python version
+              run: python --version
+            - name: Run a Python script
+              run: python holaMundo.py
