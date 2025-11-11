@@ -16,4 +16,4 @@ jobs:
             - name: Check Python version
               run: python --version
             - name: Run a Python script
-              run: python holaMundo.py
+              run: python ../holaMundo.py
